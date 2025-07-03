@@ -57,12 +57,6 @@ This is a RESTful API for managing blog posts, built with Python and FastAPI. It
     ```
     The API will be available at `http://127.0.0.1:8000`.
 
-## Configuration Details
-
-The application uses environment variables for configuration, typically managed via a `.env` file. Ensure you have a `.env` file in the root directory with the necessary database credentials and other settings. Refer to `.env.example` for a template.
-
-**Important Note:** Remember to copy `.env.example` to `.env` and fill in the necessary credentials.
-
 ## Project Structure
 
 ```
