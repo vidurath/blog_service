@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+sqlmodel==0.0.16
+psycopg2-binary
+pydantic
+python-dotenv
