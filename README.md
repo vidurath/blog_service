@@ -18,7 +18,7 @@ This is a RESTful API for managing blog posts, built with Python and FastAPI. It
 1.  **Clone the repository:**
     ```bash
     git clone [repository_url]
-    cd blog_service_api
+    cd blog_service
     ```
 
 2.  **Create and activate a virtual environment:**
@@ -35,11 +35,33 @@ This is a RESTful API for managing blog posts, built with Python and FastAPI. It
     pip install -r requirements.txt
     ```
 
-4.  **Docker Setup (for PostgreSQL):**
-    Ensure Docker is installed and running on your system.
+## How to Run
 
-5.  **Run the application:**
-    Instructions will be provided after the application is developed.
+### Using Docker
+
+1.  Ensure Docker is installed and running.
+2.  Navigate to the `blog_service` directory.
+3.  Run the command:
+    ```bash
+    docker compose up --build
+    ```
+    This will start the PostgreSQL database and the FastAPI application.
+
+### Without Docker
+
+1.  Ensure you have Python and `uvicorn` installed (via `requirements.txt`).
+2.  Activate your virtual environment (if not already active).
+3.  Run the application:
+    ```bash
+    uvicorn main:app --reload
+    ```
+    The API will be available at `http://127.0.0.1:8000`.
+
+## Configuration Details
+
+The application uses environment variables for configuration, typically managed via a `.env` file. Ensure you have a `.env` file in the root directory with the necessary database credentials and other settings. Refer to `.env.example` for a template.
+
+**Important Note:** Remember to copy `.env.example` to `.env` and fill in the necessary credentials.
 
 ## Project Structure
 
